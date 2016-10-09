@@ -29,7 +29,7 @@ public class MainActivity extends Activity {
 			switch (v.getId()) {
 			case R.id.btn_srcoll:
 				startActivity(new Intent(MainActivity.this,
-						SrcollActivity.class));
+						ScrollActivity.class));
 				break;
 			case R.id.btn_xlist:
 				startActivity(new Intent(MainActivity.this, XListActivity.class));

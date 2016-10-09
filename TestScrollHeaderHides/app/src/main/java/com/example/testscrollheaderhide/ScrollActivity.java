@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.view.ViewTreeObserver.OnGlobalLayoutListener;
-import android.view.WindowManager;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -17,7 +16,7 @@ import android.widget.ListView;
 import com.example.testscrollheaderhide.srcoll.ObservableScrollView;
 import com.example.testscrollheaderhide.srcoll.ObservableScrollView.ScrollViewListener;
 
-public class SrcollActivity extends Activity implements ScrollViewListener {
+public class ScrollActivity extends Activity implements ScrollViewListener {
 
 	private View layoutHead;
 	private ObservableScrollView scrollView;
@@ -45,8 +44,6 @@ public class SrcollActivity extends Activity implements ScrollViewListener {
 
 			}
 		});
-		View view = new View(this);
-
 	}
 
 	private void initView() {
@@ -82,7 +79,7 @@ public class SrcollActivity extends Activity implements ScrollViewListener {
 				height = imageView.getHeight();
 				imageView.getWidth();
 
-				scrollView.setScrollViewListener(SrcollActivity.this);
+				scrollView.setScrollViewListener(ScrollActivity.this);
 			}
 		});
 
